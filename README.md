@@ -44,24 +44,67 @@ Define the following variables in the new contract:
      1. `accountOne` 
      2. `accountTwo`
 2. One variable of type address public named `lastToWithdraw`
-3. Two variables of type uint public named lastWithdrawAmount and contractBalance
+3. Two variables of type uint public named `lastWithdrawAmount` and `contractBalance`
 
+
+```solidity
+contract JointSavings {
+
+    /*
+    Inside the new contract define the following variables:
+    - Two variables of type `address payable` named `accountOne` and `accountTwo`
+    - A variable of type `address public` named `lastToWithdraw`
+    - Two variables of type `uint public` named `lastWithdrawAmount` and `contractBalance`.
+    */
+    address payable accountOne;
+    address payable accountTwo;
+    address public lastToWithdraw;
+    uint public lastWithdrawAmount; 
+    uint public contractBalance;
+
+
+```
 ##### Functions
 1. withdraw function: accepts two arguments: 
       1. amount of type uint 
       2. recipient of type payable address.
 
+``` solidity
+    function withdraw(uint amount, address payable recipient) public {
+```
+
 2. public payable function named deposit
       1. Set the contractBalance variable equal to the balance of the contract by using addressbalance.
-     
+
+``` solidity
+function deposit() public payable {
+
+        /*
+        Call the `contractBalance` variable and set it equal to the balance of the contract by using `address(this).balance`.
+        */
+        contractBalance = address(this).balance;
+    }
+```  
+
 3. public function named setAccounts that takes two address payable arguments:
       1. named account1 
       2. account2
 
-4. fallback function allows contract to store ether that’s sent from outside the deposit function.
+```solidity
+function setAccounts(address payable account1, address payable account2) public{
 
-##### Statements
+        // Set the values of `accountOne` and `accountTwo` to `account1` and `account2` respectively.
+        accountOne=account1;
+        accountTwo=account2;
+    }
+```
+4. fallback function allows contract to store ether that’s sent from outside the deposit function.
 
 ```solidity
 
+```
+##### Statements
+
+```solidity
+function() external payable {}
 ```
