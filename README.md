@@ -108,3 +108,21 @@ function() external payable {}
 ```solidity
 
 ```
+
+#### Compile and Deploy Your Contract in the JavaScript VM
+1. Compile your smart contract without errors.
+2. Deploy your smart contract in the JavaScript VM.
+
+
+<img width="1339" alt="Screen Shot 2022-08-07 at 2 47 49 PM" src="https://user-images.githubusercontent.com/101449950/183306568-601072b6-21a7-448e-b13c-fe24c3fea78e.png">
+<img width="1512" alt="Screen Shot 2022-08-07 at 2 52 17 PM" src="https://user-images.githubusercontent.com/101449950/183306663-e4411732-c9e4-4ec9-8439-9022e38883d1.png">
+
+##### Compiled
+![Uploading Screen Shot 2022-08-07 at 2.52.17 PM.png…]()
+
+
+
+
+
+
+
