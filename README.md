@@ -101,10 +101,10 @@ function setAccounts(address payable account1, address payable account2) public{
 4. fallback function allows contract to store ether that’s sent from outside the deposit function.
 
 ```solidity
-
+function() external payable {}
 ```
 ##### Statements
 
 ```solidity
-function() external payable {}
+
 ```
