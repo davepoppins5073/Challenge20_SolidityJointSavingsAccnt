@@ -14,6 +14,7 @@ The steps for this Challenge are divided into the following sections:
 2. Compile and Deploy Your Contract in the JavaScript VM
 3. Interact with Your Deployed Smart Contract
 
+---
 ## Resources
 
 ### Remix IDE
@@ -24,21 +25,21 @@ The steps for this Challenge are divided into the following sections:
 
 > Remix IDE is used for the entire journey of smart contract development by users at every knowledge level. It requires no setup, fosters a fast development cycle and has a rich set of plugins with intuitive GUIs. The IDE comes in 2 flavors (web app or desktop app) and as a VSCode extension. Supported browsers: Firefox, Chrome, Brave. We do not support Remix’s use on tablets or mobile devices.
 
-
+---
 ### Solidity
 
 <img width="1018" alt="Screen Shot 2022-08-07 at 1 40 25 PM" src="https://user-images.githubusercontent.com/101449950/183304006-471a9f82-146e-4500-8eed-1826c5af7d7f.png">
 
 > Solidity is an object-oriented, high-level language for implementing smart contracts. Smart contracts are programs which govern the behaviour of accounts within the Ethereum state. Solidity is a curly-bracket language designed to target the Ethereum Virtual Machine (EVM). It is influenced by C++, Python and JavaScript. You can find more details about which languages Solidity has been inspired by in the language influences section. Solidity is statically typed, supports inheritance, libraries and complex user-defined types among other features.
 
-### CODE
+## CODE
 
-#### Step 1: Create a Joint Savings Account Contract in Solidity
+### Step 1: Create a Joint Savings Account Contract in Solidity
 
 
 Define a new contract named JointSavings.
 
-##### Variables
+#### Variables
 Define the following variables in the new contract:
 1. Two variables of type address payable named 
      1. `accountOne` 
@@ -64,7 +65,7 @@ contract JointSavings {
 
 
 ```
-##### Functions
+#### Functions
 1. withdraw function: accepts two arguments: 
       1. amount of type uint 
       2. recipient of type payable address.
@@ -103,22 +104,24 @@ function setAccounts(address payable account1, address payable account2) public{
 ```solidity
 function() external payable {}
 ```
-##### Statements
+#### Statements
 
 ```solidity
 
 ```
 
-#### Compile and Deploy Your Contract in the JavaScript VM
+### Compile and Deploy Your Contract in the JavaScript VM
 1. Compile your smart contract without errors.
 2. Deploy your smart contract in the JavaScript VM.
 
-##### Compile
+#### Contract Creation
 <img width="1339" alt="Screen Shot 2022-08-07 at 2 47 49 PM" src="https://user-images.githubusercontent.com/101449950/183306568-601072b6-21a7-448e-b13c-fe24c3fea78e.png">
 
-##### Deploy
+#### Compile (Contract)
 <img width="1512" alt="Screen Shot 2022-08-07 at 2 52 17 PM" src="https://user-images.githubusercontent.com/101449950/183306663-e4411732-c9e4-4ec9-8439-9022e38883d1.png">
 
+#### Deploy (Contract)
+<img width="1512" alt="Screen Shot 2022-08-07 at 2 55 00 PM" src="https://user-images.githubusercontent.com/101449950/183317480-5a78e523-563f-4013-9cb3-f5ced5f46b0c.png">
 
 
 
