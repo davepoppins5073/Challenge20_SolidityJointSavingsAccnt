@@ -127,6 +127,7 @@ function() external payable {}
 
 ### Interact with Your Deployed Smart Contract
 
+#### Setting up the two dummy Accounts
 <img width="363" alt="Screen Shot 2022-08-07 at 3 35 34 PM" src="https://user-images.githubusercontent.com/101449950/183318867-b7e9ae43-099b-40fc-89b3-1f200c85ba3b.png">
 
 
